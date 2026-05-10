@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+
+# Data directories
+data/
+wind_instruments/
+wind_instruments_1s/
+qdrant_storage/
+wind_instruments_1s.csv
+wind_instruments_1s.zip
+train.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
