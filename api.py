@@ -40,7 +40,7 @@ async def startup_event():
         logger.info(f"✓ Qdrant khởi tạo thành công (Collection: {collection_name})")
         
         # Load mapping từ CSV
-        csv_path = 'wind_instruments_1s.csv'
+        csv_path = 'wind_instruments_2s.csv'
         if os.path.exists(csv_path):
             wind_df = pd.read_csv(csv_path)
             fname_to_label = dict(zip(wind_df['fname'], wind_df['label']))

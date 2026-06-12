@@ -11,8 +11,8 @@ logging.basicConfig(level=logging.INFO)
 class QdrantVectorDB:
     """Quản lý kết nối và thao тác với Qdrant"""
     
-    def __init__(self, collection_name: str = "audio_features", 
-                 vector_size: int = 68,
+    def __init__(self, collection_name: str = "audio_features_v2", 
+                 vector_size: int = 58,
                  host: str = "localhost", 
                  port: int = 6333,
                  path: str = None):

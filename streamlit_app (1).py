@@ -88,7 +88,7 @@ st.markdown("""
 
 # Các hằng số cấu hình
 # Lưu ý: Thay đổi đường dẫn này nếu cần thiết để khớp với môi trường của bạn
-AUDIO_DATA_PATH = r"c:\Users\anh.nguyenduc6\Downloads\wind_instruments_2s"
+AUDIO_DATA_PATH = r"c:\Users\ADZ\Downloads\wind_instruments_2s"
 CSV_PATH = 'wind_instruments_2s.csv'
 
 @st.cache_resource
@@ -148,6 +148,9 @@ with info_col:
         st.audio(uploaded_file)
         st.write(f"**Tên file:** `{uploaded_file.name}`")
         st.write(f"**Kích thước:** `{uploaded_file.size / 1024:.1f} KB`")
+        # Lấy label từ file CSV
+        file_label = fname_to_label.get(uploaded_file.name, "Không xác định")
+        st.write(f"**Loại nhạc cụ:** `{file_label}`")
 
 st.divider()
 
